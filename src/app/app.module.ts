@@ -16,8 +16,12 @@ import { TodooAccueilComponent } from './todoo/todoo-accueil/todoo-accueil.compo
 import { TodooMenuComponent } from './todoo/todoo-menu/todoo-menu.component';
 import { BoiteIdeePeleMeleComponent } from './boite-idee/boite-idee-pele-mele/boite-idee-pele-mele.component';
 import { BoiteIdeeAccueilComponent } from './boite-idee/boite-idee-accueil/boite-idee-accueil.component';
+import { BoiteIdeeMenuComponent } from './boite-idee/boite-idee-menu/boite-idee-menu.component';
 import { MenuComponent } from './menu/menu.component';
 import { AccueilComponent } from './accueil/accueil.component';
+import { ProjetModule } from './projet/projet.module';
+import { TodooModule } from './todoo/todoo.module';
+import { BoiteIdeeModule } from './boite-idee/boite-idee.module';
 
 
 
@@ -26,6 +30,7 @@ const routes: Routes = [
   { path: '', component: AccueilComponent },
   { path: 'boiteidee/pelemele', component: BoiteIdeePeleMeleComponent },
   { path: 'boiteidee/accueil', component: BoiteIdeeAccueilComponent },
+  { path: 'boiteidee/menu', component: BoiteIdeeMenuComponent },
   { path: 'projet/court', component: ProjetCourtComponent },
   { path: 'projet/moyen', component: ProjetMoyenComponent },
   { path: 'projet/long', component: ProjetLongComponent },
@@ -56,6 +61,7 @@ const routes: Routes = [
     TodooMenuComponent,
     BoiteIdeePeleMeleComponent,
     BoiteIdeeAccueilComponent,
+    BoiteIdeeMenuComponent,
     MenuComponent,
     AccueilComponent,
   ],
