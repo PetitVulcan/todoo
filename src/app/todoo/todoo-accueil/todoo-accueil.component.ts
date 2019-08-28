@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'app-todoo-accueil',
+  selector: 'todoo-accueil',
   templateUrl: './todoo-accueil.component.html',
   styleUrls: ['./todoo-accueil.component.css']
 })

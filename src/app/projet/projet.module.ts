@@ -5,10 +5,11 @@ import { ProjetLongComponent } from './projet-long/projet-long.component';
 import { Routes, RouterModule } from '@angular/router';
 import { ProjetMenuComponent } from './projet-menu/projet-menu.component';
 import { ProjetAccueilComponent } from './projet-accueil/projet-accueil.component';
+import { TodooService } from '../todoo.service';
 
 const routes: Routes = [
   {
-    path: '', component: ProjetCourtComponent, children: [
+    path: '', component: ProjetMenuComponent, children: [
       { path: 'accueil', component: ProjetAccueilComponent},
       { path: 'court', component: ProjetCourtComponent},
       { path: 'moyen', component: ProjetMoyenComponent },
@@ -23,9 +24,12 @@ const routes: Routes = [
     ProjetMoyenComponent,
     ProjetLongComponent,
     ProjetMenuComponent,
-    ProjetAccueilComponent],
+    ProjetAccueilComponent
+  ],
   imports: [
     RouterModule.forChild(routes)
-  ]
+  ],
+  providers: [TodooService],
+  bootstrap: [ProjetAccueilComponent]
 })
 export class ProjetModule { }

@@ -1,18 +1,25 @@
-<h5>ToDoo</h5>
-<div class="nav">
-    <div>
-        <button type="button" class="btn">
-            <a class="nav-link" routerLink="/todoo/quotidien">Quotidiennne</a>
-        </button>
+<div class="row">
+    <div class="col-2">
+        <h5>ToDoo</h5>
+        <div class="nav">
+            <div>
+                <button type="button" class="btn">
+                    <a class="nav-link" routerLink="/todoo/quotidien">Quotidiennne</a>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="btn">
+                    <a class="nav-link" routerLink="/todoo/hebdomadaire">Hebdomadaire</a>
+                </button>
+            </div>
+            <div>
+                <button type="button" class="btn">
+                    <a class="nav-link" routerLink="/todoo/mensuel">Mensuelle</a>
+                </button>
+            </div>
+        </div>
     </div>
-    <div>
-        <button type="button" class="btn">
-            <a class="nav-link" routerLink="/todoo/hebdomadaire">Hebdomadaire</a>
-        </button>
-    </div>
-    <div>
-        <button type="button" class="btn">
-            <a class="nav-link" routerLink="/todoo/mensuel">Mensuelle</a>
-        </button>
+    <div class="col-10">
+        <router-outlet></router-outlet>
     </div>
 </div>
