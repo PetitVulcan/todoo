@@ -17,7 +17,6 @@ const routes: Routes = [
 
 @NgModule({
   declarations: [   
-    BoiteIdeeModule,
     BoiteIdeePeleMeleComponent,
     BoiteIdeeMenuComponent,
     BoiteIdeeAccueilComponent
