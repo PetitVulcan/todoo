@@ -19,7 +19,7 @@ const routes: Routes = [
 ]
 
 @NgModule({
-  declarations: [
+  declarations: [    
     TodooModule,
     TodooHebdomadaireComponent,
     TodooQuotidienComponent,
