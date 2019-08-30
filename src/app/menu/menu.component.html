@@ -1,11 +1,43 @@
-<nav class="navbar navbar-expand-lg navbar-dark">
-    <button type="button" class="btn">
-        <a class="nav-link" routerLink="/todoo">Todoo</a>
-    </button>
-    <button type="button" class="btn">
-        <a class="nav-link" routerLink="/projet">Projet</a>
-    </button>
-    <button type="button" class="btn">
-        <a class="nav-link" routerLink="/boiteidee">Idées</a>
-    </button>
+<nav class="row menu">
+    <div class="col-4">
+        <div class="titre">
+            <i class="fa fa-folder-open-o white" aria-hidden="true"></i><strong class="red">P</strong>ersonal<strong
+                class="red"> P</strong>roject<strong class="red">
+                O</strong>rganizer
+        </div>
+    </div>
+    <div class="col-5">
+        <div class="row">
+            <a class="nav-link bouton" routerLink="/">
+                <span>Accueil</span>
+            </a>
+            <a class="nav-link bouton" routerLink="/todoo/accueil">
+                <span>Todoo</span>
+            </a>
+            <a class="nav-link bouton" routerLink="/projet/accueil">
+                <span>Projets</span>
+            </a>
+            <a class="nav-link bouton" routerLink="/boiteidee/accueil">
+                <span>Idées</span>
+            </a>
+            <a class="nav-link bouton" routerLink="#">
+                <span>About</span>
+            </a>
+        </div>
+    </div>
+    <div class="col-3">
+        <span class="lien">
+            <a class="bouton2" href="https://www.facebook.com/ncheron" target="_blank"><i
+                    class="fa fa-facebook-official" aria-hidden="true"></i></a>
+            <a class="bouton2" href="" target="_blank"><i class="fa fa-instagram" aria-hidden="true"></i>
+            </a>
+            <a class="bouton2"
+                href="https://fr.linkedin.com/in/nicolas-cheron-896b3015?trk=people-guest_profile-result-card_result-card_full-click"
+                target="_blank"><i class="fa fa-linkedin" aria-hidden="true"></i>
+            </a>
+            <a class="bouton2" href="https://twitter.com/ncheron_bourse?lang=fr" target="_blank"><i
+                    class="fa fa-twitter" aria-hidden="true"></i>
+            </a>
+        </span>
+    </div>
 </nav>
