@@ -1,1 +1,40 @@
-<p>Todoo Quotidiennne Works</p>
+<div class="container">
+        <h5> <strong class="orange">T</strong>odoo <strong class="orange">D</strong>aily</h5>
+        <div class="row">
+                <div class="col-8">
+
+                </div>
+                <div class="col-4">
+                        <h6>Ajouter une Todoo</h6>
+                        <form [formGroup]="formAddTodooDaily" (ngSubmit)="valider()">
+
+                                <div>
+                                        <input class="input-group" type='text' formControlName="Titre"
+                                                placeholder="Titre" />
+                                </div>
+                                <div>
+                                        <input class="input-group" type='text' formControlName="Description"
+                                                placeholder="Description" />
+                                </div>
+                                <div>
+                                        <input class="input-group" type='text' formControlName="Details"
+                                                placeholder="Details" />
+                                </div>
+                                <div>
+                                        <button class="btn" type="submit">Valider</button>
+                                </div>
+
+                        </form>
+                        <h6>Détails Todoo</h6>
+                        <div>
+                                <input type="text" (change)="findTodoo()" placeholder="id de la Todoo"
+                                        [(ngModel)]="id" />
+                        </div>
+                        <div>
+                                Titre : {{todoo.Titre}} <br>
+                                Description : {{todoo.Description}}<br>
+                                Details : {{todoo.Details}}
+                        </div>
+                </div>
+        </div>
+</div>

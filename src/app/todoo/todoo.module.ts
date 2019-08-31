@@ -5,7 +5,9 @@ import { TodooMensuelComponent } from './todoo-mensuel/todoo-mensuel.component';
 import { Routes, RouterModule } from '@angular/router';
 import { TodooMenuComponent } from './todoo-menu/todoo-menu.component';
 import { TodooAccueilComponent } from './todoo-accueil/todoo-accueil.component';
-import { TodooService } from '../todoo.service';
+import { DataService } from '../data.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 
 const routes: Routes = [
   {
@@ -26,9 +28,12 @@ const routes: Routes = [
     TodooMenuComponent,
     TodooAccueilComponent],
   imports: [
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
     RouterModule.forChild(routes)
   ],
-  providers: [TodooService],
+  providers: [DataService],
   bootstrap: [TodooAccueilComponent]
 })
 export class TodooModule { }
