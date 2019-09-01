@@ -7,10 +7,28 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./todoo-list.component.css']
 })
 export class TodooListComponent implements OnInit {
-  todoos
+  todoos;
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    // this.todoos = this.data.getTodoos;
+    this.data.getApi('getTodoos').subscribe((res:any)=> {
+      if(res.error){
+        alert('Aucune todoo');
+      }
+      else {
+        this.todoos = res.todoos;
+        console.dir(this.todoos);
+      }
+    });
   }
+  // getTodoos = () => {this.data.getApi('getTodoos').subscribe((res:any)=> {
+  //   if(res.error){
+  //     alert('Aucune todoo');
+  //   }
+  //   else {
+  //     this.todoos = res.todoos;
+  //     console.log("todoo chargées");
+  //   }
+  // });
+  // }
 }
