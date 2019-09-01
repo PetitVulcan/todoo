@@ -1,10 +1,10 @@
 import { Injectable } from '@angular/core';
-import {HttpClient} from "@angular/common/http";
+import { HttpClient } from "@angular/common/http";
 @Injectable()
 export class DataService {
 
-  baseUrl ="http://localhost:8083/";
-  constructor(private http:HttpClient) {
+  baseUrl = "http://localhost:8083/";
+  constructor(private http: HttpClient) {
 
   }
 
@@ -19,7 +19,11 @@ export class DataService {
     return this.http.get(this.baseUrl + lien);
   }
 
-  postApi = (lien,data)=> {
-    return this.http.post(this.baseUrl+lien,data);
+  postApi = (lien, data) => {
+    return this.http.post(this.baseUrl + lien, data);
   }
+  todoos = Array<any>;
+  getTodoos = () => {
+    return this.http.post(this.baseUrl +"public/todoos.json")
+}
 }

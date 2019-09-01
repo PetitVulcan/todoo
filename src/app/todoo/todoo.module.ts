@@ -8,6 +8,8 @@ import { TodooAccueilComponent } from './todoo-accueil/todoo-accueil.component';
 import { DataService } from '../data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TodooListComponent } from './todoo-list/todoo-list.component';
+import { TodooComponent } from './todoo/todoo.component';
 
 const routes: Routes = [
   {
@@ -26,7 +28,9 @@ const routes: Routes = [
     TodooQuotidienComponent,
     TodooMensuelComponent,
     TodooMenuComponent,
-    TodooAccueilComponent],
+    TodooAccueilComponent,
+    TodooListComponent,
+    TodooComponent],
   imports: [
     HttpClientModule,
     FormsModule,
