@@ -11,6 +11,6 @@ export class TodooListComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.todoos = this.data.getTodoos;
+    // this.todoos = this.data.getTodoos;
   }
 }
