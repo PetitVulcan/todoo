@@ -22,8 +22,8 @@ export class DataService {
   postApi = (lien, data) => {
     return this.http.post(this.baseUrl + lien, data);
   }
-  todoos = Array<any>;
-  getTodoos = () => {
-    return this.http.post(this.baseUrl +"public/todoos.json")
-}
+  // todoos = Array<any>;
+  // getTodoos = () => {
+  //   return this.http.post(this.baseUrl +"public/todoos.json")
+  // }
 }
