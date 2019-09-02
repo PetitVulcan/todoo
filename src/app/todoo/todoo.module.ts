@@ -10,6 +10,7 @@ import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { TodooListComponent } from './todoo-list/todoo-list.component';
 import { TodooComponent } from './todoo/todoo.component';
+import { CommonModule } from '@angular/common';
 
 const routes: Routes = [
   {
@@ -35,7 +36,8 @@ const routes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    CommonModule
   ],
   providers: [DataService],
   bootstrap: [TodooAccueilComponent]

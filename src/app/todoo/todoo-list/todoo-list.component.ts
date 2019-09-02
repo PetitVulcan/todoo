@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { DataService } from 'src/app/data.service';
+import { TodooModel } from 'src/app/models/todoo.model';
 
 @Component({
   selector: 'app-todoo-list',
@@ -7,7 +8,7 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./todoo-list.component.css']
 })
 export class TodooListComponent implements OnInit {
-  todoo;
+  todoo:TodooModel;
   todoos;
   constructor(private data:DataService) { }
 
