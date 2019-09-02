@@ -7,6 +7,7 @@ import { DataService } from 'src/app/data.service';
   styleUrls: ['./todoo-list.component.css']
 })
 export class TodooListComponent implements OnInit {
+  todoo;
   todoos;
   constructor(private data:DataService) { }
 

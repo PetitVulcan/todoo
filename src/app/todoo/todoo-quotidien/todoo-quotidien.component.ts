@@ -12,7 +12,7 @@ import { FormBuilder, FormGroup, Validators, RequiredValidator } from "@angular/
 export class TodooQuotidienComponent implements OnInit {
   id;
   todoo:TodooModel;
-  todooList: Array<any>;
+  todoos: Array<any>;
   formAddTodooDaily : FormGroup = this.fb.group({
     'Titre' : [''],
     'Description' : [''],
