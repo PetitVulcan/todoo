@@ -38,10 +38,16 @@ app.get('/accueil',function(req,res){
     //Response on json
     res.json(exResponse);
 })
-// app.get('/getTodoos',function(req,res){
-//     for  todoo in todoos
-// })
 
+app.get('/getTodoos',function(req,res){
+    //for  todoo in todoos
+    if(todoos) {
+        res.json({error : false, todoos});
+    }
+    else {
+        res.json({error:true});
+    }
+});
 app.get('/getTodoo/:id',function(req,res){
     let id = req.params.id;
     let todoo = todoos.find(x=> x.id == id);
