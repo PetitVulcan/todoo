@@ -13,6 +13,7 @@ export class TodooComponent implements OnInit {
   constructor(private data: DataService) { }
 
   ngOnInit() {
+    console.log(this.todoo)
   }
 
 }
