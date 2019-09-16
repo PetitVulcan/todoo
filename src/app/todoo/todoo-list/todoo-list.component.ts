@@ -8,7 +8,13 @@ import { TodooModel } from 'src/app/models/todoo.model';
   styleUrls: ['./todoo-list.component.css']
 })
 export class TodooListComponent implements OnInit {
-  todoo:TodooModel;
+  todoo:TodooModel = {
+    id : 0,
+    Titre:"",
+    Description : '',
+    Details : "",
+    Urgent : false
+  };
   todoos;
   constructor(private data:DataService) { }
 

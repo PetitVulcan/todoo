@@ -1,15 +1,30 @@
 <div class="row todoo">
-    <div class="col-1">{{todoo.id}}</div>
-    <div class="col-3 titre">
+    <div class="col-2 titre">
         {{todoo.Titre}}
     </div>
     <div class="col-7 dsc">
         {{todoo.Description}}
     </div>
     <div class="col-1 img">
-        <img src="../../../assets/img/urgent.png" height=15px>
+        <div *ngIf="todoo.Urgent; else notUrgent">
+            <p>
+                <img src="../../../assets/img/urgent.png" height=15px>
+            </p>
+        </div>
+
+        <ng-template #notUrgent>
+            <p>
+                <img src="../../../assets/img/!urgent.png" height=15px>
+            </p>
+        </ng-template>
+
     </div>
-    <!-- <div class="col-1 img">
-        <button Click="/deleteTodoo/{{todoo.id}}">Delete</button>
-    </div> -->
+    <div class="col-1 img">
+            <i class="fa fa-info-circle" aria-hidden="true" (click)='findTodoo()'[(ngModel)]="todoo.id"></i>
+
+    </div>
+    <div class="col-1 img">
+            <i class="fa fa-trash delete" aria-hidden="true" (click)='delete()'[(ngModel)]="todoo.id"></i>
+    </div>
+    
 </div>
