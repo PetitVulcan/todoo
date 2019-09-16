@@ -1,0 +1,19 @@
+.item
+{
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.titre
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+.dsc
+{
+    font-size: 12px;
+}
+.img
+{
+    float: right;
+    text-align: right;
+}

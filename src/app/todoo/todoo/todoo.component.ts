@@ -9,7 +9,7 @@ import { TodooModel } from 'src/app/models/todoo.model';
 })
 export class TodooComponent implements OnInit {
   @Input() todoo:TodooModel;
-
+  id;
   constructor(private data: DataService) { }
 
   ngOnInit() {
@@ -22,6 +22,16 @@ export class TodooComponent implements OnInit {
       }
       else {
         alert("Todoo supprimée");
+      }
+    })
+  }
+  findTodoo = () => {
+    this.data.getApi('getTodoo/'+this.todoo).subscribe((res:any)=> {
+      if(res.error){
+        alert('Aucune todoo avec cet id');
+      }
+      else {
+        this.todoo = res.todoo;
       }
     })
   }
