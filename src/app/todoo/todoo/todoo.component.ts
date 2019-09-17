@@ -15,7 +15,7 @@ export class TodooComponent implements OnInit {
   ngOnInit() {
     console.log(this.todoo)
   }
-  delete = () => {
+  delete = (id) => {
     this.data.postApi('delTodoo',this.todoo).subscribe((res:any)=> {
       if(res.error){
         alert("Error suppression");
@@ -25,8 +25,9 @@ export class TodooComponent implements OnInit {
       }
     })
   }
-  findTodoo = () => {
-    this.data.getApi('getTodoo/'+this.todoo).subscribe((res:any)=> {
+  findTodoo = (id) => {
+    this.data.getApi('getTodoo/'+id).subscribe((res:any)=> {
+
       if(res.error){
         alert('Aucune todoo avec cet id');
       }

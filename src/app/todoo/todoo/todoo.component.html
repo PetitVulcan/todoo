@@ -21,10 +21,10 @@
                 </div>
             </ng-template>
             <div class="item">
-                <i class="fa fa-info-circle" aria-hidden="true" (click)='findTodoo()' [(ngModel)]="todoo.id"></i>
+                <i class="fa fa-info-circle" aria-hidden="true" (click)='findTodoo(todoo.id)'></i>
             </div>
             <div class="item">
-                <i class="fa fa-trash delete" aria-hidden="true" (click)='delete()' [(ngModel)]="this.todoo.id"></i>
+                <i class="fa fa-trash delete" aria-hidden="true" (click)='delete(todoo.id)'></i>
             </div>
         </div>
     </div>

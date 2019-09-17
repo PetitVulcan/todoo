@@ -9,13 +9,13 @@
                         <form [formGroup]="formAddTodooDaily" (ngSubmit)="valider()">
                                 <div class="form-check-inline">
                                         <label class="form-check-label">
-                                                <input type="radio" formControlName="Urgent" [(ngModel)]="todoo.Urgent"
+                                                <input type="radio" formControlName="Urgent" 
                                                         [value]="false">Normal
                                         </label>
                                 </div>
                                 <div class="form-check-inline">
                                         <label class="form-check-label">
-                                                <input type="radio"formControlName="Urgent" [(ngModel)]="todoo.Urgent"
+                                                <input type="radio"formControlName="Urgent" 
                                                         [value]="true">Important
                                         </label>
                                 </div>
