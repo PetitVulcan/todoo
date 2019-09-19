@@ -11,6 +11,8 @@ import { ReactiveFormsModule, FormsModule } from '@angular/forms';
 import { TodooListComponent } from './todoo-list/todoo-list.component';
 import { TodooComponent } from './todoo/todoo.component';
 import { CommonModule } from '@angular/common';
+import { TodooAddComponent } from './todoo-add/todoo-add.component';
+import { TodooDetailComponent } from './todoo-detail/todoo-detail.component';
 
 const routes: Routes = [
   {
@@ -31,7 +33,10 @@ const routes: Routes = [
     TodooMenuComponent,
     TodooAccueilComponent,
     TodooListComponent,
-    TodooComponent],
+    TodooComponent,
+    TodooAddComponent,
+    TodooDetailComponent
+  ],
   imports: [
     HttpClientModule,
     FormsModule,

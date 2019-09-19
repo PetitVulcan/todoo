@@ -1,0 +1,32 @@
+<div class="container-fluid">
+    <div class="formulaire">
+        <div class="titreh6">
+            Ajouter une Todoo
+        </div>
+        <form [formGroup]="formAddTodooDaily" (ngSubmit)="valider()">
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" formControlName="Urgent" [value]="false">Normal
+                </label>
+            </div>
+            <div class="form-check-inline">
+                <label class="form-check-label">
+                    <input type="radio" formControlName="Urgent" [value]="true">Important
+                </label>
+            </div>
+            <div>
+                <textarea class="txt" rows="1" formControlName="Titre" placeholder="Titre"></textarea>
+            </div>
+            <div>
+                <textarea class="txt" rows="2" id="md" formControlName="Description"
+                    placeholder="Description"></textarea>
+            </div>
+            <div>
+                <textarea class="txt" rows="5" id="xl" formControlName="Details" placeholder="Details"></textarea>
+            </div>
+            <div>
+                <button class="btn" type="submit">Valider</button>
+            </div>
+        </form>
+    </div>
+</div>

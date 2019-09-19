@@ -16,7 +16,7 @@ export class TodooComponent implements OnInit {
     console.log(this.todoo)
   }
   delete = (id) => {
-    this.data.postApi('delTodoo',this.todoo).subscribe((res:any)=> {
+    this.data.getApi('delTodoo/'+id).subscribe((res:any)=> {
       if(res.error){
         alert("Error suppression");
       }

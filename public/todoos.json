@@ -74,128 +74,69 @@
         "Titre": "La todoo 11",
         "Description": "Bah c'est une todoo",
         "Details": "avec pleins de détails dedans",
-        "Urgent": null
-    },
-    {
-        "id": 12,
-        "Titre": "",
-        "Description": "",
-        "Details": "",
-        "Urgent": null
-    },
-    {
-        "id": 13,
-        "Titre": "",
-        "Description": "",
-        "Details": "",
-        "Urgent": null
-    },
-    {
-        "id": 14,
-        "Titre": "",
-        "Description": "",
-        "Details": "",
-        "Urgent": null
-    },
-    {
-        "id": 15,
-        "Titre": "",
-        "Description": "",
-        "Details": "",
-        "Urgent": null
+        "Urgent": true
     },
     {
         "id": 16,
         "Titre": "Todoo Nini",
         "Description": "bah la todoo à Nini quoi",
         "Details": "les détails de Nini",
-        "Urgent": null
+        "Urgent": false
     },
     {
         "id": 17,
         "Titre": "Encore une Todoo",
         "Description": "Juste pour vérifier",
         "Details": "un petit detail",
-        "Urgent": null
+        "Urgent": true
     },
     {
         "id": 18,
         "Titre": "Todoo pour la Liste",
         "Description": "essai d'une todoo",
         "Details": "détails de la todoo",
-        "Urgent": null
+        "Urgent": false
     },
     {
         "id": 19,
         "Titre": "LA todoo Urgente",
         "Description": "Urgent",
-        "Details": "Urgent"
+        "Details": "Urgent",
+        "Urgent": true
     },
     {
         "id": 20,
         "Titre": "test",
         "Description": "test",
-        "Details": "test"
+        "Details": "test",
+        "Urgent": true
     },
     {
         "id": 21,
         "Titre": "test2",
         "Description": "test2",
-        "Details": "test2"
+        "Details": "test2",
+        "Urgent": false
     },
     {
         "id": 22,
         "Titre": "test3",
         "Description": "test3",
         "Details": "test3",
-        "Urgent": ""
+        "Urgent": true
     },
     {
         "id": 23,
         "Titre": "ennieme ",
         "Description": "ennieme ",
-        "Details": "ennieme "
+        "Details": "ennieme ",
+        "Urgent": true
     },
     {
         "id": 24,
         "Titre": "test final",
         "Description": "test final",
         "Details": "test final",
-        "Urgent": ""
-    },
-    {
-        "id": 25,
-        "Titre": "t",
-        "Description": "",
-        "Details": "",
-        "Urgent": null
-    },
-    {
-        "id": 26,
-        "Titre": "t",
-        "Description": "h",
-        "Details": "h",
-        "Urgent": null
-    },
-    {
-        "id": 27,
-        "Titre": "rs",
-        "Description": "ser",
-        "Details": "vse",
-        "Urgent": null
-    },
-    {
-        "id": 28,
-        "Titre": "efq",
-        "Description": "es",
-        "Details": "es",
-        "Urgent": true
-    },
-    {
-        "id": 29,
-        "Titre": "efq",
-        "Description": "es",
-        "Details": "es",
         "Urgent": false
     }
 ]

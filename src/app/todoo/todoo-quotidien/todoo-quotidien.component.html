@@ -5,46 +5,8 @@
                         <app-todoo-list></app-todoo-list>
                 </div>
                 <div class="col-3">
-                        <h6>Ajouter une Todoo</h6>
-                        <form [formGroup]="formAddTodooDaily" (ngSubmit)="valider()">
-                                <div class="form-check-inline">
-                                        <label class="form-check-label">
-                                                <input type="radio" formControlName="Urgent" 
-                                                        [value]="false">Normal
-                                        </label>
-                                </div>
-                                <div class="form-check-inline">
-                                        <label class="form-check-label">
-                                                <input type="radio"formControlName="Urgent" 
-                                                        [value]="true">Important
-                                        </label>
-                                </div>
-                                <div>
-                                        <input class="input-group" type='text' formControlName="Titre"
-                                                placeholder="Titre" />
-                                </div>
-                                <div>
-                                        <input class="input-group" type='text' formControlName="Description"
-                                                placeholder="Description" />
-                                </div>
-                                <div>
-                                        <input class="input-group" type='text' formControlName="Details"
-                                                placeholder="Details" />
-                                </div>
-                                <div>
-                                        <button class="btn" type="submit">Valider</button>
-                                </div>
-                        </form>
-                        <h6>Détails Todoo</h6>
-                        <div>
-                                <input type="text" (change)="findTodoo()" placeholder="id de la Todoo"
-                                        [(ngModel)]="id" />
-                        </div>
-                        <div>
-                                Titre : {{todoo.Titre}} <br>
-                                Description : {{todoo.Description}}<br>
-                                Details : {{todoo.Details}}
-                        </div>
+                        <app-todoo-detail></app-todoo-detail>
+                        <app-todoo-add></app-todoo-add>                        
                 </div>
         </div>
 </div>
