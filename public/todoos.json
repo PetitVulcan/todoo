@@ -7,13 +7,6 @@
         "Urgent": true
     },
     {
-        "id": 2,
-        "Titre": "Reserver Resto Pro",
-        "Description": "Repas du 11/09/19 Avec Mr X de chez Y.",
-        "Details": "Reserver table chez Brigitte pour le 11/09/19. Rendez-vous à 12h30 sur place",
-        "Urgent": false
-    },
-    {
         "id": 3,
         "Titre": "Contacter Mr X de chez Y",
         "Description": "Prendre contact avec Mr X pour organiser un déjeuner pro",
@@ -131,12 +124,5 @@
         "Description": "ennieme ",
         "Details": "ennieme ",
         "Urgent": true
-    },
-    {
-        "id": 24,
-        "Titre": "test final",
-        "Description": "test final",
-        "Details": "test final",
-        "Urgent": false
     }
 ]

@@ -1,6 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { TodooModel } from 'src/app/models/todoo.model';
-import { HttpClient } from 'selenium-webdriver/http';
+import { HttpClient } from '@angular/common/http';
 import { DataService } from 'src/app/data.service';
 
 @Component({
