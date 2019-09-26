@@ -73,7 +73,7 @@ app.get('/delTodoo/:id',function(req,res){
         console.log(todoos)
         console.log(id)
         // find by id
-        todoos.splice(todoos.indexOf(id),1)
+        todoos.splice(todoos.indexOf(todoos.find(todoo=>todoo.id==id)),1)
         //delete todoos[id];
         console.log(todoos)       
         fs.writeFileSync('public/todoos.json',JSON.stringify(todoos,null,4));
