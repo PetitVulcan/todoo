@@ -70,12 +70,12 @@ app.post('/addTodoo',function(req,res){
 app.get('/delTodoo/:id',function(req,res){
     let id = req.params.id;
     try {
-        console.log(todoos)
+        console.log("avant: "+todoos)
         console.log(id)
         // find by id
-        todoos.splice(todoos.indexOf(id),1)
+        todoos.splice(todoos.findbyId(id),1)
         //delete todoos[id];
-        console.log(todoos)       
+        console.log("après: "+todoos)       
         fs.writeFileSync('public/todoos.json',JSON.stringify(todoos,null,4));
         res.json({error:false});
     }catch(e){
