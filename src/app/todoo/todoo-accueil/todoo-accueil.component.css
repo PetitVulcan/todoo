@@ -1,4 +1,22 @@
-.container
+.container-fluid
 {
-    margin-top: 30px;
+    margin-top: 10px;
+    text-align: center;
+}
+.titre
+{    
+    color:white;
+    padding: 15px 0px 15px 0px;
+    background-color:rgb(126, 126, 126);
+    border-radius:10px;
+}
+.orange
+{
+    color:orangered;
+    
+}
+.col-2 .col-5 .col-7 .col-10
+{
+    border-spacing: 0px;
+    margin:0px;
 }

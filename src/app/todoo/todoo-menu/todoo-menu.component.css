@@ -1,25 +1,13 @@
-.container-fluid
-{
-    text-align: center;
-}
 .menu
 {
-    margin-top: 30px;
-    margin-left: 30px;
-    height:650px;
     border-radius:10px;
     background-color:rgb(126, 126, 126);
-    text-align: center;
-}
-.titre
-{
-    color:white;
-    padding-top: 15px;
+    margin-right: 0px;
+   
 }
 .orange
 {
-    color:orangered;
-    
+    color:orangered;    
 }
 a
 {
@@ -30,6 +18,10 @@ a
 a:hover
 {
     background-color:rgb(100, 100, 100);
-    color:orangered;
     border-radius: 5px;
+}
+.bouton
+{
+    margin-left: 40px;
+    margin-right: 40px;
 }

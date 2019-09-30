@@ -1,8 +1,11 @@
+.todoo
+{
+    align-items: center;
+}
 .item
 {
     color:rgb(126,126,126);
-    margin-left: 5px;
-    margin-right: 5px;
+    margin: 10px 15px 0px 0px;
 }
 .titre
 {

@@ -31,12 +31,7 @@ app.use(function(req,res,next){
 })
 //Pour request and response json
 app.use(bodyparser.json());
-// //app.use(express.static(__dirname+'/public'));
-// app.get('/accueil',function(req,res){
-//     let exResponse = {'message' : 'coucou', 'nom' : 'abadi'};
-//     //Response on json
-//     res.json(exResponse);
-// })
+
 app.get('/getTodoos',function(req,res){
     //for  todoo in todoos
     if(todoos) {
@@ -69,13 +64,10 @@ app.post('/addTodoo',function(req,res){
 })
 app.get('/delTodoo/:id',function(req,res){
     let id = req.params.id;
-    try {
-        console.log("avant: "+todoos)
-        console.log(id)
-        // find by id
-        todoos.splice(todoos.findbyId(id),1)
+    try {      
         //delete todoos[id];
-        console.log("après: "+todoos)       
+        todoos.splice(todoos.indexOf(todoos.find(todoo=>todoo.id==id)),1)
+        //Inscription dans le fichier Json              
         fs.writeFileSync('public/todoos.json',JSON.stringify(todoos,null,4));
         res.json({error:false});
     }catch(e){

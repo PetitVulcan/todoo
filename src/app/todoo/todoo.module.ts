@@ -16,7 +16,7 @@ import { TodooDetailComponent } from './todoo-detail/todoo-detail.component';
 
 const routes: Routes = [
   {
-    path: '', component: TodooMenuComponent, children: [
+    path: '', component: TodooAccueilComponent, children: [
       { path: 'accueil', component: TodooAccueilComponent },
       { path: 'quotidien', component: TodooQuotidienComponent },
       { path: 'hebdomadaire', component: TodooHebdomadaireComponent },
