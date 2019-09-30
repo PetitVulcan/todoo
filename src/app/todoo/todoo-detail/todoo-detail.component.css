@@ -1,27 +1,74 @@
-.container-fluid
+.details
 {
-    margin-top: 1px;
+    margin-top: 10px; 
+    padding-top: 10px;   
+    padding-bottom: 20px;
+    background-color:rgb(126,126,126);
+    align-items: center;
+    border-radius: 10px;
+}
+.titre
+{
+    color:rgb(82, 82, 82);
+    margin-left: auto;
+    margin-right: auto;
+    width: 30%;
+    padding: 6px 0 1px 0;
+    background-color: white;
+    border-radius: 10px;
 }
 .label
 {
+    margin-top: 5px;
+    margin-bottom: 5px;
     color:white;
     background-color: #7E7E7E;
     border-radius: 5px;
 }
-.details
+.titretodoo
 {
-    min-height: 125px;
-    padding-bottom: 20px;
-}
-.titre
-{
-    height: 30px;
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 45px;
+    color:rgb(80,80,80);
+    background-color: white;
+    border-radius: 10px;
 }
 .description
 {
-    height: 60px;
+    padding: 10px;    
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    height: 80px;
+    background-color: white;
+    border-radius: 10px;
+    color:rgb(80,80,80);
+}
+.detail
+{
+    padding: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 95%;
+    min-height: 125px;
+    color:rgb(80,80,80);
+    background-color: white;
+    border-radius: 10px;
 }
 .orange
 {
+    font-size: 17px;
     color:orangered;
+}
+input
+{
+    width: 110px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color:white;
+    background-color: rgb(200,200,200);
+    border-radius: 5px;
 }

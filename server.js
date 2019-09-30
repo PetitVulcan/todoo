@@ -13,7 +13,7 @@ const token = function() {
 };
 
 
-const todoos =JSON.parse(fs.readFileSync('public/todoos.json','utf-8'));
+const todoosDB =JSON.parse(fs.readFileSync('public/todoos.json','utf-8'));
 const userAccess =JSON.parse(fs.readFileSync('public/access.json','utf-8'));
 //Pour que notre app web nodeJs accepte les datas en POST
 app.use(bodyparser.urlencoded({extended : true}));
@@ -34,16 +34,35 @@ app.use(bodyparser.json());
 
 app.get('/getTodoos',function(req,res){
     //for  todoo in todoos
-    if(todoos) {
-        res.json({error : false, todoos : todoos});
+    if(todoosDB) {
+        res.json({error : false, todoos : todoosDB});
     }
     else {
         res.json({error:true});
     }
 });
+app.get('/getTodoos/:ech',function(req,res){
+    let echeance = req.params.ech;    
+    let todoos=[];   
+    for (let t of todoosDB) 
+    {        
+        if (echeance==t.Echeance)
+        {
+            todoos.push(t);
+        }       
+    }
+    if(todoos) 
+    {
+        res.json({error : false, todoos : todoos});
+    }
+    else 
+    {
+        res.json({error:true});
+    }
+});
 app.get('/getTodoo/:id',function(req,res){
     let id = req.params.id;
-    let todoo = todoos.find(x=> x.id == id);
+    let todoo = todoosDB.find(x=> x.id == id);
     if(todoo) {
         res.json({error : false, todoo : todoo});
     }
@@ -53,10 +72,10 @@ app.get('/getTodoo/:id',function(req,res){
 })
 app.post('/addTodoo',function(req,res){
     let data = req.body;
-    let lastId = todoos[todoos.length-1].id;
+    let lastId = todoosDB[todoosDB.length-1].id;
     try {
-        todoos.push({id : lastId+1, ...data});
-        fs.writeFileSync('public/todoos.json',JSON.stringify(todoos,null,4));
+        todoosDB.push({id : lastId+1, ...data});
+        fs.writeFileSync('public/todoos.json',JSON.stringify(todoosDB,null,4));
         res.json({error:false});
     }catch(e){
         res.json({error:true})
@@ -66,9 +85,9 @@ app.get('/delTodoo/:id',function(req,res){
     let id = req.params.id;
     try {      
         //delete todoos[id];
-        todoos.splice(todoos.indexOf(todoos.find(todoo=>todoo.id==id)),1)
+        todoosDB.splice(todoosDB.indexOf(todoosDB.find(todoo=>todoo.id==id)),1)
         //Inscription dans le fichier Json              
-        fs.writeFileSync('public/todoos.json',JSON.stringify(todoos,null,4));
+        fs.writeFileSync('public/todoos.json',JSON.stringify(todoosDB,null,4));
         res.json({error:false});
     }catch(e){
         res.json({error:true})
