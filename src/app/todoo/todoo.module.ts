@@ -3,12 +3,10 @@ import { TodooHebdomadaireComponent } from './todoo-hebdomadaire/todoo-hebdomada
 import { TodooQuotidienComponent } from './todoo-quotidien/todoo-quotidien.component';
 import { TodooMensuelComponent } from './todoo-mensuel/todoo-mensuel.component';
 import { Routes, RouterModule } from '@angular/router';
-import { TodooMenuComponent } from './todoo-menu/todoo-menu.component';
 import { TodooAccueilComponent } from './todoo-accueil/todoo-accueil.component';
 import { DataService } from '../data.service';
 import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule, FormsModule } from '@angular/forms';
-import { TodooListComponent } from './todoo-list/todoo-list.component';
 import { TodooComponent } from './todoo/todoo.component';
 import { CommonModule } from '@angular/common';
 import { TodooAddComponent } from './todoo-add/todoo-add.component';
