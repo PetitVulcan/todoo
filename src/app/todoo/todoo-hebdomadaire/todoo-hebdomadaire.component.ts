@@ -8,6 +8,7 @@ import { TodooModel } from 'src/app/models/todoo.model';
   styleUrls: ['./todoo-hebdomadaire.component.css']
 })
 export class TodooHebdomadaireComponent implements OnInit {
+  todoos;
   todoo:TodooModel = {
     id : 0,
     Echeance:"",
@@ -16,11 +17,10 @@ export class TodooHebdomadaireComponent implements OnInit {
     Details : "",
     Urgent : false
   };
-  todoos;
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.data.getApi('getTodoos').subscribe((res:any)=> {
+    this.data.getApi('getTodoos/Swing').subscribe((res:any)=> {
       if(res.error){
         alert('Aucune todoo');
       }

@@ -20,7 +20,7 @@ export class TodooMensuelComponent implements OnInit {
   constructor(private data:DataService) { }
 
   ngOnInit() {
-    this.data.getApi('getTodoos').subscribe((res:any)=> {
+    this.data.getApi('getTodoos/Long').subscribe((res:any)=> {
       if(res.error){
         alert('Aucune todoo');
       }

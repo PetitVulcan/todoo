@@ -7,6 +7,7 @@ import { MenuComponent } from './menu/menu.component';
 import { AccueilComponent } from './accueil/accueil.component';
 import { DataService } from './data.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './footer/footer.component';
 
 
 const routes: Routes = [
@@ -19,7 +20,8 @@ const routes: Routes = [
   declarations: [
     AppComponent,
     MenuComponent,
-    AccueilComponent
+    AccueilComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

@@ -1,26 +1,26 @@
-<div class="container-fluid">
+<div class="details">
+    <div class="titre">
+        <h6><strong class="orange">D</strong>étails <strong class="orange">T</strong>odoo</h6>
+    </div>
+    <div class="label">
+        Titre
+    </div>
+    <div class="titretodoo">
+        {{todoo.Titre}}
+    </div>
+    <div class="label">
+        Description
+    </div>
+    <div class="description">
+        {{todoo.Description}}
+    </div>
+    <div class="label">
+        Détails
+    </div>
+    <div class="detail">
+        {{todoo.Details}}
+    </div>
     <div>
         <input type="text" (change)="findTodoo()" placeholder="id de la Todoo" [(ngModel)]="id" />
-    </div>
-    <div class="details">
-        <h6>Détails Todoo</h6>
-        <div class="label">
-            Titre
-        </div>
-        <div class="titre">
-            {{todoo.Titre}}
-        </div>
-        <div class="label">
-            Description
-        </div>
-        <div class="description">
-            {{todoo.Description}}
-        </div>
-        <div class="label">
-            Détails
-        </div>
-        <div class="details">
-            {{todoo.Details}}
-        </div>
     </div>
 </div>

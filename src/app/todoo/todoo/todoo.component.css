@@ -1,6 +1,7 @@
 .todoo
 {
     align-items: center;
+    border-bottom: 1px solid rgb(160, 160, 160);
 }
 .item
 {
