@@ -17,6 +17,7 @@ export class TodooDetailComponent implements OnInit {
   id;
   todoo:TodooModel = {
     id : 0,
+    Echeance:"",
     Titre:"",
     Description : "",
     Details : "",

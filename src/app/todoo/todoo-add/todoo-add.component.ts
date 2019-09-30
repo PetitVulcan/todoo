@@ -13,6 +13,7 @@ export class TodooAddComponent implements OnInit {
   id;
   todoo:TodooModel = {
     id : 0,
+    Echeance:"",
     Titre:"",
     Description : "",
     Details : "",
@@ -20,6 +21,7 @@ export class TodooAddComponent implements OnInit {
   };
   todoos: Array<any>;
   formAddTodooDaily : FormGroup = this.fb.group({
+    'Echeance':[''],
     'Titre' : [''],
     'Description' : [''],
     'Details' : [''],

@@ -12,6 +12,8 @@
 .txt
 {
     width: 90%;
+    min-height: 30px;
+    color:rgb(82, 82, 82);
     margin:10px 10px 10px 10px;
     padding-left: 10px;
     padding-right: 10px;

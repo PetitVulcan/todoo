@@ -18,6 +18,7 @@ export class TodooQuotidienComponent implements OnInit {
   id;
   todoo:TodooModel = {
     id : 0,
+    Echeance:"",
     Titre:"",
     Description : "",
     Details : "",

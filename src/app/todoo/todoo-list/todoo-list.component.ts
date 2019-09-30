@@ -10,6 +10,7 @@ import { TodooModel } from 'src/app/models/todoo.model';
 export class TodooListComponent implements OnInit {
   todoo:TodooModel = {
     id : 0,
+    Echeance:"",
     Titre:"",
     Description : '',
     Details : "",
@@ -29,14 +30,4 @@ export class TodooListComponent implements OnInit {
       }
     });
   }
-  // getTodoos = () => {this.data.getApi('getTodoos').subscribe((res:any)=> {
-  //   if(res.error){
-  //     alert('Aucune todoo');
-  //   }
-  //   else {
-  //     this.todoos = res.todoos;
-  //     console.log("todoo chargées");
-  //   }
-  // });
-  // }
 }
