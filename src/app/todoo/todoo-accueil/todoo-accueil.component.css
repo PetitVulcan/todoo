@@ -17,9 +17,11 @@
 .menu
 {
     border-radius:10px;
-    background-color:rgb(126, 126, 126);
-    margin-right: 0px;
-   
+    background-color:rgb(126, 126, 126);   
+}
+.float
+{
+   display:flex;
 }
 a
 {
@@ -38,6 +40,6 @@ a:active
 }
 .bouton
 {
-    margin-left: 40px;
+    margin-left: 60px;
     margin-right: 40px;
 }
