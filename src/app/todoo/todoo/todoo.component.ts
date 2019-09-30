@@ -22,7 +22,8 @@ export class TodooComponent implements OnInit {
         alert("Error suppression");
       }
       else {
-        alert("Todoo supprimée");
+        window.location.reload();
+        alert("Todoo supprimée");        
       }
     })
   }

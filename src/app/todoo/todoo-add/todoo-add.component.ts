@@ -38,6 +38,7 @@ export class TodooAddComponent implements OnInit {
         alert("Error insertion");
       }
       else {
+        window.location.reload();
         alert("Todoo ajoutée");
       }
     })

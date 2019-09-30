@@ -8,6 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { DataService } from './data.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
+import { ConfirmationPopoverModule } from 'angular-confirmation-popover';
 
 
 const routes: Routes = [
@@ -28,6 +29,7 @@ const routes: Routes = [
     HttpClientModule,
     FormsModule,
     ReactiveFormsModule,
+    ConfirmationPopoverModule.forRoot({confirmButtonType:'danger'}),
     RouterModule.forRoot(routes)
   ],
   providers: [DataService],
