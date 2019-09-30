@@ -1,2 +1,33 @@
-<p>Todoo Hebdomadaire Works</p> 
-   
+<div class="row barTitre">
+                <div class="col-3 titre">
+                        Titre
+                </div>
+                <div class="col-7 dsc">
+                        Description
+                </div>
+                <div class="col-2 ">
+                        <div class="row img">
+                                <div *ngIf="todoo.Urgent; else notUrgent" class="item">
+                                        <p>
+                                                <img src="../../../assets/img/urgent.png" height=15px>
+                                        </p>
+                                </div>
+        
+                                <ng-template #notUrgent>
+                                        <div class="item">
+                                                <p>
+                                                        <img src="../../../assets/img/!urgent.png" height=15px>
+                                                </p>
+                                        </div>
+                                </ng-template>
+                                <div class="item">
+                                        <i class="fa fa-info-circle" aria-hidden="true"></i>
+                                </div>
+                                <div class="item">
+                                        <i class="fa fa-trash delete" aria-hidden="true"></i>
+                                </div>
+                        </div>
+                </div>
+        </div>
+        
+        <app-todoo *ngFor="let t of todoos" [todoo]="t"></app-todoo>

@@ -5,12 +5,18 @@ import { TodooMensuelComponent } from './todoo-mensuel/todoo-mensuel.component';
 import { Routes, RouterModule } from '@angular/router';
 import { TodooMenuComponent } from './todoo-menu/todoo-menu.component';
 import { TodooAccueilComponent } from './todoo-accueil/todoo-accueil.component';
-import { TodooService } from '../todoo.service';
+import { DataService } from '../data.service';
+import { HttpClientModule } from '@angular/common/http';
+import { ReactiveFormsModule, FormsModule } from '@angular/forms';
+import { TodooListComponent } from './todoo-list/todoo-list.component';
+import { TodooComponent } from './todoo/todoo.component';
+import { CommonModule } from '@angular/common';
+import { TodooAddComponent } from './todoo-add/todoo-add.component';
+import { TodooDetailComponent } from './todoo-detail/todoo-detail.component';
 
 const routes: Routes = [
   {
-    path: '', component: TodooMenuComponent, children: [
-      { path: 'accueil', component: TodooAccueilComponent },
+    path: '', component: TodooAccueilComponent, children: [
       { path: 'quotidien', component: TodooQuotidienComponent },
       { path: 'hebdomadaire', component: TodooHebdomadaireComponent },
       { path: 'mensuel', component: TodooMensuelComponent },
@@ -24,11 +30,20 @@ const routes: Routes = [
     TodooQuotidienComponent,
     TodooMensuelComponent,
     TodooMenuComponent,
-    TodooAccueilComponent],
-  imports: [
-    RouterModule.forChild(routes)
+    TodooAccueilComponent,
+    TodooListComponent,
+    TodooComponent,
+    TodooAddComponent,
+    TodooDetailComponent
   ],
-  providers: [TodooService],
+  imports: [
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    RouterModule.forChild(routes),
+    CommonModule
+  ],
+  providers: [DataService],
   bootstrap: [TodooAccueilComponent]
 })
 export class TodooModule { }

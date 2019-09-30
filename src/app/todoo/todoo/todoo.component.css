@@ -1,0 +1,23 @@
+.todoo
+{
+    align-items: center;
+}
+.item
+{
+    color:rgb(126,126,126);
+    margin: 10px 15px 0px 0px;
+}
+.titre
+{
+    font-size: 12px;
+    font-weight: bold;
+}
+.dsc
+{
+    font-size: 12px;
+}
+.img
+{
+    float: right;
+    text-align: right;
+}

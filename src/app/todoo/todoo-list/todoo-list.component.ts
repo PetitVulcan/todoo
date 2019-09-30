@@ -3,11 +3,11 @@ import { DataService } from 'src/app/data.service';
 import { TodooModel } from 'src/app/models/todoo.model';
 
 @Component({
-  selector: 'app-todoo-mensuel',
-  templateUrl: './todoo-mensuel.component.html',
-  styleUrls: ['./todoo-mensuel.component.css']
+  selector: 'app-todoo-list',
+  templateUrl: './todoo-list.component.html',
+  styleUrls: ['./todoo-list.component.css']
 })
-export class TodooMensuelComponent implements OnInit {
+export class TodooListComponent implements OnInit {
   todoo:TodooModel = {
     id : 0,
     Echeance:"",
@@ -31,4 +31,3 @@ export class TodooMensuelComponent implements OnInit {
     });
   }
 }
-

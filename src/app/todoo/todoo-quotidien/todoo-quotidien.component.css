@@ -1,0 +1,28 @@
+.barTitre
+{
+    background-color: rgb(126, 126, 126);    
+    margin-top: 10px;
+    border-radius: 10px;
+    align-items: center;
+}
+.item
+{
+    color:white;
+    margin:10px 15px 0px 0px;
+}
+.titre
+{
+    Color:white;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dsc
+{
+    Color:white;
+    font-size: 14px;
+}
+.img
+{
+    float: right;
+    text-align: right;
+}

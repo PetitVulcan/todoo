@@ -1,0 +1,68 @@
+.menu
+{
+    background-color:rgb(126, 126, 126);
+    padding-left: 20px;
+    color:white;
+    font-size: 17px;
+}
+.white
+{
+    font-size: 20px;
+}
+.red
+{
+    font-size: 20px;
+    color:orangered;
+}
+.titre
+{
+    margin-top: -3px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+a
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    color:white;
+}
+a:hover
+{
+    background-color:rgb(100, 100, 100);
+    color:orangered;
+}
+.bouton
+{
+    font-size: 15px;
+    background-color:rgb(126, 126, 126);
+    
+}
+
+.bouton2:hover
+{
+    border-radius: 2px;
+    background-color:rgb(100, 100, 100);    
+}
+.bouton:hover
+{
+    border-radius: 10px;
+    background-color:rgb(100, 100, 100);
+    color:orangered;
+}
+.lien
+{
+    
+    float: right;
+    text-align: right;
+}
+i
+{
+    margin-top: 12px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color:white;
+}
+i:hover
+{
+    color:orangered;  
+}
