@@ -15,8 +15,26 @@
     color:orangered;
     
 }
-.col-2 .col-5 .col-7 .col-10
+.menu
 {
-    border-spacing: 0px;
-    margin:0px;
+    border-radius:10px;
+    background-color:rgb(126, 126, 126);
+    margin-right: 0px;
+   
+}
+a
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    color:white;
+}
+a:hover
+{
+    background-color:rgb(100, 100, 100);
+    border-radius: 5px;
+}
+.bouton
+{
+    margin-left: 40px;
+    margin-right: 40px;
 }

@@ -1,6 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { HttpClient } from "@angular/common/http";
-import { DataService } from '../../data.service';
+import { DataService } from 'src/app/data.service';
 import { TodooModel } from 'src/app/models/todoo.model';
 
 @Component({
@@ -9,21 +8,27 @@ import { TodooModel } from 'src/app/models/todoo.model';
   styleUrls: ['./todoo-quotidien.component.css']
 })
 export class TodooQuotidienComponent implements OnInit {
- 
-  constructor(private http: HttpClient, private data: DataService) {
-
-  }
-  ngOnInit() {
-  }
-  id;
   todoo:TodooModel = {
     id : 0,
     Echeance:"",
     Titre:"",
-    Description : "",
+    Description : '',
     Details : "",
-    Urgent : ""
+    Urgent : false
   };
-  todoos: Array<any>;
-  
+  todoos;
+  constructor(private data:DataService) { }
+
+  ngOnInit() {
+    this.data.getApi('getTodoos').subscribe((res:any)=> {
+      if(res.error){
+        alert('Aucune todoo');
+      }
+      else {
+        this.todoos = res.todoos;
+        console.dir(this.todoos);
+      }
+    });
+  }
 }
+

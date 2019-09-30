@@ -8,10 +8,24 @@
                         <app-todoo-add></app-todoo-add>
                 </div>
                 <div class="col-10">
-                        <app-todoo-menu></app-todoo-menu>
+                        <div class="row menu">
+                                <div class="offset-4 col-6">
+                                        <div class="row">
+                                                <a class="nav-link bouton" routerLink="/todoo/quotidien">
+                                                        <span><strong class="orange">D</strong>aily</span>
+                                                </a>
+                                                <a class="nav-link bouton" routerLink="/todoo/hebdomadaire">
+                                                        <span><strong class="orange">S</strong>wing</span>
+                                                </a>
+                                                <a class="nav-link bouton" routerLink="/todoo/mensuel">
+                                                        <span><strong class="orange">L</strong>ong</span>
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
                         <div class="row">
                                 <div class="col-7">
-                                        <app-todoo-list></app-todoo-list>
+                                        <router-outlet></router-outlet>
                                 </div>
                                 <div class="col-5">
                                         <app-todoo-detail></app-todoo-detail>
