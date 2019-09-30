@@ -29,9 +29,7 @@ const routes: Routes = [
     TodooHebdomadaireComponent,
     TodooQuotidienComponent,
     TodooMensuelComponent,
-    TodooMenuComponent,
     TodooAccueilComponent,
-    TodooListComponent,
     TodooComponent,
     TodooAddComponent,
     TodooDetailComponent

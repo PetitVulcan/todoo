@@ -198,5 +198,29 @@
         "Description": "Le Lorem Ipsum est simplement du faux texte.",
         "Details": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l imprimerie depuis les années 1500",
         "Urgent": true
+    },
+    {
+        "id": 35,
+        "Echeance": "Swing",
+        "Titre": "La todoo de Chloé",
+        "Description": "C'est la Todoo de Chloé",
+        "Details": "Bah tout est dans le titre !",
+        "Urgent": true
+    },
+    {
+        "id": 36,
+        "Echeance": "Daily",
+        "Titre": "La todoo de Chloé",
+        "Description": "C'est la Todoo de Chloé",
+        "Details": "Bah tout est dans le titre !",
+        "Urgent": true
+    },
+    {
+        "id": 37,
+        "Echeance": "Long",
+        "Titre": "La todoo de Chloé",
+        "Description": "C'est la Todoo de Chloé",
+        "Details": "Bah tout est dans le titre !",
+        "Urgent": false
     }
 ]

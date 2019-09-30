@@ -49,11 +49,7 @@ app.get('/getTodoos/:ech',function(req,res){
         if (echeance==t.Echeance)
         {
             todoos.push(t);
-        } 
-        else
-        {
-            console.log("skiped!");
-        }        
+        }       
     }
     if(todoos) 
     {

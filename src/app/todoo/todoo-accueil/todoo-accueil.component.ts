@@ -6,10 +6,9 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./todoo-accueil.component.css']
 })
 export class TodooAccueilComponent implements OnInit {
-
+  
   constructor() { }
 
   ngOnInit() {
   }
-
 }

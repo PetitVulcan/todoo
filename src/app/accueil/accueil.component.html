@@ -8,9 +8,12 @@
                     class="orange">L</strong>ist</h6>
                     <div>
                         <ul>
-                            <li>Tu as <strong class="orange">X</strong> tâches dans la liste Intra-day.</li>
-                            <li>Tu as <strong class="orange">X</strong> tâches dans la liste Swing.</li>
-                            <li>Tu as <strong class="orange">X</strong> tâches dans la liste Long.</li>
+                            <li>Tu as <strong class="orange">{{todoosDaily}}</strong> tâches dans la liste Intra-day dont 
+                                <strong class="orange"> {{urgentDaily}} </strong> importante(s).</li>
+                            <li>Tu as <strong class="orange">{{todoosSwing}}</strong> tâches dans la liste Swing  dont 
+                                <strong class="orange"> {{urgentSwing}} </strong> importante(s).</li>
+                            <li>Tu as <strong class="orange">{{todoosLong}}</strong> tâches dans la liste Long  dont 
+                                <strong class="orange"> {{urgentLong}} </strong> importante(s).</li>
                         </ul>
                     </div>
         </div>
