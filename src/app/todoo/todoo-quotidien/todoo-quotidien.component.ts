@@ -26,7 +26,6 @@ export class TodooQuotidienComponent implements OnInit {
       }
       else {
         this.todoos = res.todoos;
-        console.dir(this.todoos);
       }
     });
   }

@@ -5,38 +5,16 @@
         <div class="col-7 dsc">
                 Description
         </div>
-        <div class="col-2 ">
-                <div class="row img">
-                        <div *ngIf="todoo.Urgent; else notUrgent" class="item">
-                                <p>
-                                        <img src="../../../assets/img/urgent.png" height=15px>
-                                </p>
-                        </div>
-                        <ng-template #notUrgent>
-                                <div class="item">
-                                        <p>
-                                                <img src="../../../assets/img/!urgent.png" height=15px>
-                                        </p>
-                                </div>
-                        </ng-template>
-                        <div class="item">
-                                <i class="fa fa-info-circle" aria-hidden="true"></i>
-                        </div>
-                        <div class="item">
-                                <i class="fa fa-trash delete" aria-hidden="true"></i>
-                        </div>
-                </div>
-        </div>
 </div>
 <app-todoo *ngFor="let t of todoos" [todoo]="t"></app-todoo>
 <div class="row page">
         <nav class="col-12">
-                <ul class="pagination justify-content-center pagination">
+                <!-- <ul class="pagination justify-content-center pagination">
                         <li id="color" class="page-item"><a class="page-link" href="#">Previous</a></li>
                         <li class="page-item"><a class="color" href="#">1</a></li>
                         <li class="page-item"><a class="page-link" href="#">2</a></li>
                         <li class="page-item"><a class="page-link" href="#">3</a></li>
                         <li class="page-item"><a class="page-link" href="#">Next</a></li>
-                </ul>
+                </ul> -->
         </nav>
 </div>

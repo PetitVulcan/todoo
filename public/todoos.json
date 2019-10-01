@@ -280,22 +280,6 @@
         "Urgent": true
     },
     {
-        "id": 49,
-        "Echeance": "Long",
-        "Titre": "Le Lorem Ipsum",
-        "Description": "Le Lorem Ipsum est simplement du faux texte.",
-        "Details": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l imprimerie depuis les années 1500",
-        "Urgent": false
-    },
-    {
-        "id": 50,
-        "Echeance": "Long",
-        "Titre": "Le Lorem Ipsum",
-        "Description": "Le Lorem Ipsum est simplement du faux texte.",
-        "Details": "Le Lorem Ipsum est simplement du faux texte employé dans la composition et la mise en page avant impression. Le Lorem Ipsum est le faux texte standard de l imprimerie depuis les années 1500",
-        "Urgent": false
-    },
-    {
         "id": 51,
         "Echeance": "Long",
         "Titre": "Le Lorem Ipsum",
