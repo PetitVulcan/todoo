@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~8.2.4",
     "@angular/router": "~8.2.4",
     "angular-confirmation-popover": "^4.2.1",
+    "jw-angular-pagination": "^1.1.0",
+    "jw-paginate": "^1.0.4",
     "rxjs": "~6.5.2",
     "tslib": "^1.10.0",
     "zone.js": "~0.9.1"

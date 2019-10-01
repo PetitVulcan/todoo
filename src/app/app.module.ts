@@ -8,7 +8,7 @@ import { AccueilComponent } from './accueil/accueil.component';
 import { DataService } from './data.service';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { FooterComponent } from './footer/footer.component';
-
+import { JwPaginationComponent } from 'jw-angular-pagination';
 
 
 const routes: Routes = [
@@ -22,7 +22,8 @@ const routes: Routes = [
     AppComponent,
     MenuComponent,
     AccueilComponent,
-    FooterComponent
+    FooterComponent,
+    JwPaginationComponent
   ],
   imports: [
     BrowserModule,

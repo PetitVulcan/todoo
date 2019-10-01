@@ -4,7 +4,15 @@
     margin-top: 10px;
     border-top-left-radius : 10px;
     border-top-right-radius: 10px;
-    align-items: center;
+}
+.page
+{
+    background-color: rgb(126, 126, 126);    
+    margin-bottom: 10px;
+    border-bottom-left-radius : 10px;
+    border-bottom-right-radius: 10px;
+    height: 30px;
+    vertical-align:middle;
 }
 .item
 {

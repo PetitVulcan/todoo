@@ -13,8 +13,9 @@ export class TodooComponent implements OnInit {
 
   constructor(private data: DataService) { }
 
-  ngOnInit() {
-    console.log(this.todoo)
+  ngOnInit() 
+  {
+  
   }
   delete = (id) => {
     this.data.getApi('delTodoo/'+id).subscribe((res:any)=> {
