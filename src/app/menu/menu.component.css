@@ -20,17 +20,19 @@
     padding-left: 15px;
     padding-right: 20px;
 }
+
 a
 {
     margin-left: 5px;
     margin-right: 5px;
     color:white;
 }
-a:hover
+a:active
 {
-    background-color:rgb(100, 100, 100);
+    background-color:rgb(126, 126, 126);
     color:orangered;
 }
+
 .bouton
 {
     font-size: 15px;
@@ -43,6 +45,14 @@ a:hover
     border-radius: 2px;
     background-color:rgb(100, 100, 100);    
 }
+
+.bouton:hover
+{
+    border-radius: 10px;
+    background-color:rgb(100, 100, 100);
+    color:orangered;
+}
+
 .bouton:hover
 {
     border-radius: 10px;
@@ -61,8 +71,4 @@ i
     margin-left: 5px;
     margin-right: 5px;
     color:white;
-}
-i:hover
-{
-    color:orangered;  
 }
