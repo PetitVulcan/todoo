@@ -1,1 +1,50 @@
-<p>projet-detail works!</p>
+<div class="details">
+    <div class="titre">
+        <h6><strong class="orange">D</strong>étails <strong class="orange">P</strong>rojet</h6>
+    </div>
+    <div class="row">
+        <div class="col-6">
+            <div class="label">
+                Date de Création
+            </div>
+            <div class="date L">
+                {{projet.DateCreation}}
+            </div>
+        </div>
+        <div class="col-6">
+            <div class="label">
+                Date d'échéance
+            </div>
+            <div class="date R">
+                {{projet.DateEcheance}}
+            </div>
+        </div>
+    </div>
+    <div class="label">
+        Non du projet
+    </div>
+    <div class="titreprojet">
+        {{projet.Nom}}
+    </div>
+    <div class="label">
+        Description
+    </div>
+    <div class="description">
+        {{projet.Description}}
+    </div>
+    <div class="label">
+        Notes
+    </div>
+    <div class="notes">
+        {{projet.Notes}}
+    </div>
+    <div class="label">
+        Contributeurs
+    </div>
+    <div class="ctb">
+        {{projet.Contributeurs}}
+    </div>
+    <div>
+        <input type="text" (change)="findProjet()" placeholder="id de la Todoo" [(ngModel)]="id" />
+    </div>
+</div>
