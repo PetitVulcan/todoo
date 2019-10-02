@@ -1,0 +1,47 @@
+.container-fluid
+{
+    margin-top: 10px;
+    text-align: center;
+}
+.titre
+{    
+    color:white;
+    padding: 10px 0px 10px 0px;
+    background-color:rgb(126, 126, 126);
+    border-radius:10px;
+}
+.orange
+{
+    color:orangered;    
+}
+.menu
+{
+    border-radius:10px;
+    background-color:rgb(126, 126, 126);   
+}
+.float
+{
+   display:flex;
+}
+a
+{
+    margin-left: 5px;
+    margin-right: 5px;
+    color:white;
+    border-radius: 5px;
+}
+a:hover
+{
+    background-color:rgb(100, 100, 100);
+}   
+
+a:active
+{
+    background-color:rgb(100, 100, 100);
+}
+
+.bouton
+{
+    margin-left: 60px;
+    margin-right: 40px;
+}

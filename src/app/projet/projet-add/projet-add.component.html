@@ -1,0 +1,46 @@
+<div class="formulaire">
+    <div class="titreh6">
+        <strong class="orange">A</strong>jouter <strong class="orange">P</strong>rojet
+    </div>
+    <form [formGroup]="formAddProjet" (ngSubmit)="valider()">
+        <div class="row">
+            <div class="col-6">
+                <label class="label">Date de début</label>
+                <div>
+                    <input type="date" class="date" formControlName="DateCreation">
+                </div>
+            </div>
+            <div class="col-6">
+                <div>
+                    <label class="label">Date d'echéance</label>
+                    <div>
+                        <input type="date" class="date" formControlName="DateEcheance">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div>
+            <select class="txt" formControlName="Duree">
+                <option value="" disabled selected>Terme</option>
+                <option value="Court">Court</option>
+                <option value="Moyen">Moyen</option>
+                <option value="Long">Long</option>
+            </select>
+        </div>
+        <div>
+            <textarea class="txt" rows="1" formControlName="Nom" placeholder="Nom du projet"></textarea>
+        </div>
+        <div>
+            <textarea class="txt" rows="2" formControlName="Contributeurs" placeholder="Contributeurs"></textarea>
+        </div>
+        <div>
+            <textarea class="txt" rows="5" id="md" formControlName="Description" placeholder="Description"></textarea>
+        </div>
+        <div>
+            <textarea class="txt" rows="5" id="xl" formControlName="Notes" placeholder="Notes"></textarea>
+        </div>
+        <div>
+            <button class="btn" type="submit">Valider</button>
+        </div>
+    </form>
+</div>

@@ -1,1 +1,29 @@
-<p>Projet Accueil Works</p>
+<div class="container-fluid">
+        <H5 class="titre">
+                <i class="fa fa-list-ul" aria-hidden="true"></i><strong class="orange"> P</strong>rojets
+        </H5>
+        <div class="menu">
+                <div class="offset-4 col-6 float">
+                        <a class="nav-link bouton" routerLink="/projet/court">
+                                <span><strong class="orange">C</strong>ourt</span>
+                        </a>
+                        <a class="nav-link bouton" routerLink="/projet/moyen">
+                                <span><strong class="orange">M</strong>oyen</span>
+                        </a>
+                        <a class="nav-link bouton" routerLink="/projet/long">
+                                <span><strong class="orange">L</strong>ong</span>
+                        </a>
+                </div>
+        </div>
+        <div class="row">
+                <div class="col-3">
+                        <app-projet-add></app-projet-add>
+                </div>
+                <div class="col-6">
+                        <router-outlet></router-outlet>
+                </div>
+                <div class="col-3">
+                        <app-projet-detail></app-projet-detail>
+                </div>
+        </div>
+</div>

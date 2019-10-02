@@ -5,12 +5,16 @@ import { ProjetMoyenComponent } from './projet-moyen/projet-moyen.component';
 import { ProjetLongComponent } from './projet-long/projet-long.component';
 import { ProjetMenuComponent } from './projet-menu/projet-menu.component';
 import { ProjetAccueilComponent } from './projet-accueil/projet-accueil.component';
-import { TodooService } from '../todoo.service';
+import { DataService } from '../data.service';
+import { ProjetAddComponent } from './projet-add/projet-add.component';
+import { ReactiveFormsModule,FormsModule } from '@angular/forms';
+import { HttpClientModule } from '@angular/common/http';
+import { CommonModule } from '@angular/common';
+import { ProjetDetailComponent } from './projet-detail/projet-detail.component';
 
 const routes: Routes = [
   {
-    path: '', component: ProjetMenuComponent, children: [
-      { path: 'accueil', component: ProjetAccueilComponent},
+    path: '', component: ProjetAccueilComponent, children: [
       { path: 'court', component: ProjetCourtComponent},
       { path: 'moyen', component: ProjetMoyenComponent },
       { path: 'long', component: ProjetLongComponent },
@@ -23,12 +27,18 @@ const routes: Routes = [
     ProjetMoyenComponent,
     ProjetLongComponent,
     ProjetMenuComponent,
-    ProjetAccueilComponent
+    ProjetAccueilComponent,
+    ProjetAddComponent,
+    ProjetDetailComponent
   ],
   imports: [
+    HttpClientModule,
+    FormsModule,
+    ReactiveFormsModule,
+    CommonModule,
     RouterModule.forChild(routes)
   ],
-  providers: [TodooService],
+  providers: [DataService],
   bootstrap: [ProjetAccueilComponent]
 })
 export class ProjetModule { }

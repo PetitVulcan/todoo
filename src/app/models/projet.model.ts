@@ -1,10 +1,11 @@
 export interface ProjetModel {
-    Id,
-    Nom,
-    DateCreation,
-    DateEcheance,
-    Contributeurs,
-    Description,
-    Notes,
+    Id;
+    Nom;
+    DateCreation;
+    Duree;
+    DateEcheance;
+    Contributeurs;
+    Description;
+    Notes;
     Archive;
 }
