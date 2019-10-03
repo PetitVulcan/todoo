@@ -13,6 +13,7 @@ import { FooterComponent } from './footer/footer.component';
 
 const routes: Routes = [
   { path: '', component: AccueilComponent },
+  { path: 'accueil', component:AccueilComponent },
   { path: 'todoo', loadChildren: () => import('./todoo/todoo.module').then(mod => mod.TodooModule) },
   { path: 'projet', loadChildren: () => import('./projet/projet.module').then(mod => mod.ProjetModule) },
   { path: 'boiteidee', loadChildren: () => import('./boite-idee/boite-idee.module').then(mod => mod.BoiteIdeeModule) }

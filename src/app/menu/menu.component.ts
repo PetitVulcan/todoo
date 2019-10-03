@@ -12,7 +12,7 @@ export class MenuComponent implements OnInit {
     accueil : false,
     todoo : false,
     projet : false,
-    idee : false,
+    boiteidee : false,
     about : false,
   }
   constructor(private router : Router) { }
@@ -23,12 +23,11 @@ export class MenuComponent implements OnInit {
   linkMenu = (url) => {
     this.menu = {
       accueil : false,
-    todoo : false,
-    projet : false,
-    idee : false,
-    about : false,
+      todoo : false,
+      projet : false,
+      boiteidee : false,
+      about : false,
     }
-
     this.menu[url] = true;
     this.router.navigate([url])
   }

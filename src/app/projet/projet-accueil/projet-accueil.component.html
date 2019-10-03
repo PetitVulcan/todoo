@@ -1,17 +1,17 @@
 <div class="container-fluid">
         <H5 class="titre">
-                <i class="fa fa-list-ul" aria-hidden="true"></i><strong class="orange"> P</strong>rojets
+                <i class="fa fa-folder-open-o white" aria-hidden="true"></i><strong class="orange">P</strong>rojets
         </H5>
         <div class="menu">
                 <div class="offset-4 col-6 float">
-                        <a class="nav-link bouton" routerLink="/projet/court">
-                                <span><strong class="orange">C</strong>ourt</span>
+                        <a class="nav-link bouton" (click)="linkMenu('projet/court')" [class.active]="menu.court">
+                                <strong class="orange">C</strong>ourt
                         </a>
-                        <a class="nav-link bouton" routerLink="/projet/moyen">
-                                <span><strong class="orange">M</strong>oyen</span>
+                        <a class="nav-link bouton" (click)="linkMenu('/projet/moyen')" [class.active]="menu.moyen">
+                                <strong class="orange">M</strong>oyen
                         </a>
-                        <a class="nav-link bouton" routerLink="/projet/long">
-                                <span><strong class="orange">L</strong>ong</span>
+                        <a class="nav-link bouton" (click)="linkMenu('/projet/long')" [class.active]="menu.long">
+                                <strong class="orange">L</strong>ong
                         </a>
                 </div>
         </div>
