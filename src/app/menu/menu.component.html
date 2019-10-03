@@ -8,19 +8,19 @@
     </div>
     <div class="col-5">
         <div class="row">
-            <a class="nav-link bouton" routerLink="/">
+            <a class="nav-link bouton" (click)="linkMenu('accueil')" [class.active]="menu.accueil">
                 <span>Accueil</span>
             </a>
-            <a class="nav-link bouton" routerLink="/todoo/quotidien">
+            <a class="nav-link bouton" (click)="linkMenu('todoo')"  [class.active]="menu.todoo" >
                 <span>Todoo</span>
             </a>
-            <a class="nav-link bouton" routerLink="/projet/court">
+            <a class="nav-link bouton" (click)="linkMenu('projet')" [class.active]="menu.projet" >
                 <span>Projets</span>
             </a>
-            <a class="nav-link bouton" routerLink="/boiteidee/accueil">
+            <a class="nav-link bouton" (click)="linkMenu('idee')" [class.active]="menu.idee" >
                 <span>Idées</span>
             </a>
-            <a class="nav-link bouton" routerLink="#">
+            <a class="nav-link bouton" (click)="linkMenu('about')" [class.active]="menu.about">
                 <span>About</span>
             </a>
         </div>
