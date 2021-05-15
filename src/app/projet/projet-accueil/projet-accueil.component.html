@@ -1,29 +1,43 @@
 <div class="container-fluid">
-        <H5 class="titre">
-                <i class="fa fa-folder-open-o white" aria-hidden="true"></i><strong class="orange">P</strong>rojets
-        </H5>
-        <div class="menu">
-                <div class="offset-4 col-6 float">
-                        <a class="nav-link bouton" (click)="linkMenu('projet/court')" [class.active]="menu.court">
-                                <strong class="orange">C</strong>ourt
-                        </a>
-                        <a class="nav-link bouton" (click)="linkMenu('/projet/moyen')" [class.active]="menu.moyen">
-                                <strong class="orange">M</strong>oyen
-                        </a>
-                        <a class="nav-link bouton" (click)="linkMenu('/projet/long')" [class.active]="menu.long">
-                                <strong class="orange">L</strong>ong
-                        </a>
-                </div>
+  <H5 class="titre">
+    <i class="fa fa-folder-open-o white" aria-hidden="true"></i
+    ><strong class="orange">P</strong>rojets
+  </H5>
+  <!--- Ici -->
+  <div class="row">
+    <div class="col-3">
+      <app-projet-add></app-projet-add>
+    </div>
+    <div class="col-6">
+      
+        <div class="menu float">
+          <a
+            class="nav-link bouton"
+            (click)="linkMenu('projet/court')"
+            [class.active]="menu.court"
+          >
+            <strong class="orange">C</strong>ourt
+          </a>
+          <a
+            class="nav-link bouton"
+            (click)="linkMenu('/projet/moyen')"
+            [class.active]="menu.moyen"
+          >
+            <strong class="orange">M</strong>oyen
+          </a>
+          <a
+            class="nav-link bouton"
+            (click)="linkMenu('/projet/long')"
+            [class.active]="menu.long"
+          >
+            <strong class="orange">L</strong>ong
+          </a>
         </div>
-        <div class="row">
-                <div class="col-3">
-                        <app-projet-add></app-projet-add>
-                </div>
-                <div class="col-6">
-                        <router-outlet></router-outlet>
-                </div>
-                <div class="col-3">
-                        <app-projet-detail></app-projet-detail>
-                </div>
-        </div>
+      
+      <router-outlet></router-outlet>
+    </div>
+    <div class="col-3">
+      <app-projet-detail></app-projet-detail>
+    </div>
+  </div>
 </div>
